@@ -26,7 +26,6 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -64,22 +63,22 @@ h1 {
   color: #888;
 }
 
-button {
+.addbtn {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 0.8em 1.5em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #2a63bf;
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
+.addbtn:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible {
+.addbtn:focus,
+.addbtn:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
@@ -103,4 +102,23 @@ input{
 }
 .textcut{
   text-decoration:line-through;
+}
+.todo{
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px 15px;
+ 
+  margin-top: 10px;
+  position: relative;
+}
+.isCompleted{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.deleteBtn{
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
 }

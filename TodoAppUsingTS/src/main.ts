@@ -51,7 +51,7 @@ const generateTodoItem = (title: string, isCompleted: boolean, id: string) => {
     let indx = todos.findIndex((item) => item.id === id);
     todos[indx].isCompleted = true;
   };
-
+ 
   //  paragraph todo
   let para = <HTMLParagraphElement>document.createElement("p");
   para.className = isCompleted ? "textcut" : "";
